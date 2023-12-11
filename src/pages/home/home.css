@@ -1,0 +1,74 @@
+.home {
+  margin: 0 2rem;
+}
+body {
+  background: #ebe6dd;
+}
+.home-image img {
+  width: 100%;
+  height: 30rem;
+}
+.home-text {
+  margin: 2rem 0;
+  width: 80%;
+  text-align: start;
+}
+.home-grid {
+  display: flex;
+  margin: 5rem 0;
+}
+.home-grid-text {
+  margin: 0 2rem 0 0rem;
+  justify-content: start;
+}
+.home-grid-text-head,
+.home-grid-text-para {
+  display: flex;
+  margin: 0 2rem 1rem 0;
+}
+.home-grid-text-para {
+  text-align: start;
+  margin-right: 0;
+}
+.home-grid-image {
+  margin: 0 2rem 0 4rem;
+}
+.home-feedback {
+  margin-top: 10rem;
+  margin: 5rem;
+}
+.home-feedback-head,
+.home-feedback-para {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.home-feedback-button {
+  margin: 2.5rem auto;
+  background-color: black;
+  color: white;
+  border-radius: 1.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.home-feedback-form {
+  margin: 0.5rem 2rem;
+  font-size: 1.25rem;
+}
+.home-social-media-text {
+  margin: 4rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+.home-social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  align-items: center;
+}
+.home-social-media-icons svg {
+  margin: 0 5rem;
+}

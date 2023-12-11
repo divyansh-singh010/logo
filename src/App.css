@@ -23,7 +23,25 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.footer {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  margin-top: 5rem;
+  text-align: right;
+}
+.footer-list-item{
+  display: inline;
+  margin: 2rem;
+  font-size: 1rem;
+}
+.footer-list {
+  list-style-type: none;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  background-color: #000000;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +54,4 @@
     transform: rotate(360deg);
   }
 }
+

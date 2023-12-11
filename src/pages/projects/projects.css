@@ -1,0 +1,25 @@
+.projects-h1 {
+  font-size: 7.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.projects-intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects-box {
+  display: flex;
+  margin: 2rem 2.5rem 2rem 2.5rem;
+  color: white;
+  background-color: black;
+}
+.projects-box-image {
+  height: 10rem;
+}
+.projects-box-h2,.projects-box-para {
+  text-align: left;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
