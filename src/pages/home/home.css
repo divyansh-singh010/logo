@@ -8,6 +8,33 @@ body {
   width: 100%;
   height: 30rem;
 }
+.home-image {
+  position: relative;
+}
+.home-image-socialmedia {
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  width: 10%;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+.home-image-text-head {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+}
+.home-image-socialmedia svg {
+  margin: 0.5rem;
+}
 .home-text {
   margin: 2rem 0;
   width: 80%;
@@ -52,7 +79,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .home-feedback-form {
   margin: 0.5rem 2rem;
