@@ -1,89 +1,77 @@
-.navbar-links {
-  display: flex;
-  position: relative;
-}
-ul{
-    padding: 0;
-}
-.nav-link{
-    text-decoration: none;
-    color: black;
-}
-li {
-  list-style: none;
-  margin: 2rem;
-  display: inline;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.navbar-rule {
-  background-color: black;
-  height: 1px;
-  margin: 0.5rem 2rem 2rem 2rem;
-}
-.navbar-image {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  justify-content: center;
-}
-.navbar-image img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 0 2rem;
+/* CustomNavbar.css */
+
+.custom-navbar-container {
+  background-color: #6c757d; /* Bootstrap secondary background color */
+  padding: 15px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    position: relative;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.toggle-button {
+  display: none; /* Hide the toggle button by default */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block; /* Show the toggle button for smaller screens */
   }
 
   .navbar-links {
-    position: relative;
-    z-index: 1; /* Set a z-index to ensure the dropdown appears above other elements */
-  }
-
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-bottom: 1rem;
-    color: black; /* Add your color theme here */
-  }
-
-  .navbar-ul {
     display: none;
+    flex-direction: column;
     position: absolute;
-    bottom: 0; /* Display the dropdown at the bottom of the navbar */
+    top: 56px;
     left: 0;
     width: 100%;
-    background-color: #96938d; /* Add your color theme here */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 2; /* Set a higher z-index */
+    background-color: #6c757d;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .navbar-ul.open {
+  .navbar-links.open {
     display: flex;
+  }
+
+  .navbar-links ul {
     flex-direction: column;
-    align-items: center;
-    position: absolute; /* Change to absolute positioning */
-    z-index: 2; /* Set a higher z-index */
-  }
-
-  .navbar-ul li {
-    padding: 1rem;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .menu-toggle {
-    display: none;
+    padding: 10px;
   }
 }
