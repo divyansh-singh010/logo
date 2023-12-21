@@ -1,3 +1,4 @@
+// Navbar.js
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -14,7 +15,11 @@ const Navbar = () => {
     <nav className="navbar-container">
       <div className={`navbar ${menuOpen ? "open" : ""}`}>
         <div className="navbar-links">
-          <button className="menu-toggle" onClick={toggleMenu}>
+          <button
+            className="menu-toggle"
+            onClick={toggleMenu}
+            aria-label="Toggle Menu"
+          >
             Menu
           </button>
           <ul className={`navbar-ul ${menuOpen ? "open" : ""}`}>
