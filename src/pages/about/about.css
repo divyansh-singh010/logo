@@ -67,11 +67,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .about-content {
-    flex-direction: row;
-  }
-
   .about-content-grids {
     grid-template-columns: repeat(2, 1fr);
   }
