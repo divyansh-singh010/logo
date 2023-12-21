@@ -49,7 +49,7 @@
 
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 768px) {
   .about-content-grids {
     grid-template-columns: repeat(1, 1fr);
   }
