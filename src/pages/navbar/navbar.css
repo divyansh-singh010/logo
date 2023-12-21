@@ -62,7 +62,7 @@ li {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: white; /* Add your color theme here */
+    background-color: #96938d; /* Add your color theme here */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2; /* Set a higher z-index */
   }
