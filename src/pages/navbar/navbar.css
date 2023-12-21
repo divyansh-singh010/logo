@@ -39,6 +39,7 @@ li {
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    position: relative;
   }
 
   .navbar-links {
@@ -59,7 +60,7 @@ li {
   .navbar-ul {
     display: none;
     position: absolute;
-    top: 100%;
+    bottom: 0; /* Display the dropdown at the bottom of the navbar */
     left: 0;
     width: 100%;
     background-color: #96938d; /* Add your color theme here */
@@ -71,7 +72,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Change to relative positioning */
+    position: absolute; /* Change to absolute positioning */
     z-index: 2; /* Set a higher z-index */
   }
 
