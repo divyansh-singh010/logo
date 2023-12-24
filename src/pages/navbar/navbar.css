@@ -4,8 +4,7 @@
   font-family: 'Arial', sans-serif;
 }
 
-.navbar {
-  background-color: #292b2c; /* Dark background color */
+.navbar { 
   padding: 15px 0;
   position: relative;
 }
@@ -66,7 +65,7 @@
 }
 
 .navbar-rule {
-  background-color: #ffc107; /* Highlight color for the rule */
+  background-color: #000000; /* Highlight color for the rule */
   height: 1px;
   margin: 10px 0 20px 0;
 }
