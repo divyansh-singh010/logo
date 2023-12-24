@@ -14,19 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`custom-navbar-container ${menuOpen ? "open" : ""}`}>
-      <div className="container">
-        <div className="brand">
-          <Link to="/" className="nav-link" onClick={toggleMenu}>
-            <h2 className="logo-text">LOGO</h2>
-            <img
-              src="https://www.w3schools.com/howto/img_avatar.png"
-              alt="logo"
-              className="logo"
-            />
-          </Link>
-        </div>
-        <div className="toggle-button">
+    <nav className="navbar-container">
+      <div className={`navbar ${menuOpen ? "open" : ""}`}>
+        <div className="navbar-links">
           <button
             className="menu-toggle"
             onClick={toggleMenu}
@@ -34,9 +24,7 @@ const Navbar = () => {
           >
             Menu
           </button>
-        </div>
-        <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          <ul>
+          <ul className={`navbar-ul ${menuOpen ? "open" : ""}`}>
             <li>
               <Link to="/" className="nav-link" onClick={toggleMenu}>
                 Home
@@ -54,9 +42,19 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <Link to="/" className="nav-link">
+          <div className="navbar-image">
+            <h2 className="logo-text">LOGO</h2>
+            <img
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="logo"
+              className="logo"
+            />
+          </div>
+        </Link>
+        <hr className="navbar-rule" />
       </div>
     </nav>
   );
 };
-
 export default Navbar;
