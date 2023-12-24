@@ -1,4 +1,3 @@
-// Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
@@ -37,29 +36,18 @@ const Navbar = () => {
                 About
               </Link>
             </li>
-            {/* Sub-menu for smaller screens */}
-            <li className="sub-menu">
-              <Link to="/services" className="nav-link" onClick={toggleMenu}>
-                Services
-              </Link>
-            </li>
-            <li className="sub-menu">
-              <Link to="/contact" className="nav-link" onClick={toggleMenu}>
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
-        <Link to="/" className="nav-link">
-          <div className="navbar-image">
+        <div className="navbar-image">
+          <Link to="/" className="nav-link" onClick={toggleMenu}>
             <h2 className="logo-text">LOGO</h2>
             <img
               src="https://www.w3schools.com/howto/img_avatar.png"
               alt="logo"
               className="logo"
             />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <hr className="navbar-rule" />
       </div>
     </nav>
