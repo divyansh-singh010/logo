@@ -1,7 +1,4 @@
 // Navbar.js
-
-// Navbar.js
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
@@ -40,6 +37,17 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            {/* Sub-menu for smaller screens */}
+            <li className="sub-menu">
+              <Link to="/services" className="nav-link" onClick={toggleMenu}>
+                Services
+              </Link>
+            </li>
+            <li className="sub-menu">
+              <Link to="/contact" className="nav-link" onClick={toggleMenu}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <Link to="/" className="nav-link">
@@ -57,4 +65,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
