@@ -22,6 +22,7 @@
   cursor: pointer;
   color: white;
   margin-right: 15px; /* Add some spacing between the toggle button and links */
+  display: none; /* Hide the toggle button by default */
 }
 
 .menu-toggle:hover {
