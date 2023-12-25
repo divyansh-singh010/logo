@@ -23,3 +23,43 @@
   margin: 2rem;
   margin-bottom: 4rem;
 }
+
+@media (max-width: 768px) {
+  .projects-h1 {
+    font-size: 5rem; /* Adjust font size for smaller screens */
+  }
+
+  .projects-intro {
+    grid-template-columns: repeat(1, 1fr); /* Still use a single column */
+  }
+  
+  .projects-box {
+    margin: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .projects-box-h2, .projects-box-para {
+    text-align: center; /* Center text on smaller screens */
+    margin: 1rem; /* Adjust margin for smaller screens */
+    margin-bottom: 2rem; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-h1 {
+    font-size: 3.5rem; /* Adjust font size for screens less than 400px */
+  }
+
+  .projects-intro {
+    grid-template-columns: repeat(1, 1fr); /* Still use a single column */
+  }
+  
+  .projects-box {
+    margin: 0.5rem; /* Adjust margin for screens less than 400px */
+  }
+
+  .projects-box-h2, .projects-box-para {
+    text-align: center; /* Center text on screens less than 400px */
+    margin: 0.5rem; /* Adjust margin for screens less than 400px */
+    margin-bottom: 1rem; /* Adjust margin for screens less than 400px */
+  }
+}
