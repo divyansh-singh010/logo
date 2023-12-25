@@ -1,7 +1,6 @@
 .active{
     background-color: #1d4ed8;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
