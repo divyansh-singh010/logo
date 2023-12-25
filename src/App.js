@@ -5,6 +5,7 @@ import Navbar from "./pages/navbar/navbar";
 import Home from "./pages/home/home";
 import Projects from "./pages/projects/projects";
 import About from "./pages/about/about";
+import Feedback from "./pages/forms/feedback";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
       {/* Footer starts */}
       <div className="footer">
