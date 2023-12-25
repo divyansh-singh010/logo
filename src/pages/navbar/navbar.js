@@ -27,6 +27,7 @@ export const Navbar = () => {
           <NavLink to="/about">About</NavLink>
         </li>
       </ul>
+      <hr className="navbar-rule" />
     </nav>
   );
 };
