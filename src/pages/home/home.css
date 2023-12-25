@@ -1,27 +1,32 @@
+/* Common styles for all screen sizes */
 .home {
   margin: 0 2rem;
 }
+
 body {
   background: #ebe6dd;
 }
+
 .home-image img {
   width: 100%;
-  height: 30rem;
+  height: auto; /* Maintain aspect ratio */
 }
+
 .home-image {
   position: relative;
 }
+
 .home-image-socialmedia {
   display: flex;
   justify-content: center;
-  height: 10rem;
-  width: 10%;
   align-items: center;
-  flex-direction: column;
+  height: 10rem;
+  width: 100%; /* Adjust width for better responsiveness */
   position: absolute;
   top: 1rem;
   right: 0;
 }
+
 .home-image-text-head {
   margin: 0;
   position: absolute;
@@ -32,44 +37,57 @@ body {
   color: white;
   text-align: center;
 }
+
 .home-image-socialmedia svg {
   margin: 0.5rem;
 }
+
 .home-text {
   margin: 2rem 0;
-  width: 80%;
+  width: 100%; /* Full width for better responsiveness */
   text-align: start;
 }
+
 .home-grid {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   margin: 5rem 0;
 }
+
 .home-grid-text {
-  margin: 0 2rem 0 0rem;
-  justify-content: start;
+  margin: 0 2rem 1rem 0;
+  width: 100%; /* Full width for one column on smaller screens */
 }
+
 .home-grid-text-head,
 .home-grid-text-para {
   display: flex;
   margin: 0 2rem 1rem 0;
+  width: 100%; /* Full width for one column on smaller screens */
 }
+
 .home-grid-text-para {
   text-align: start;
   margin-right: 0;
 }
+
 .home-grid-image {
-  margin: 0 2rem 0 4rem;
+  margin: 0 2rem 1rem 0;
+  width: 100%; /* Full width for one column on smaller screens */
 }
+
 .home-feedback {
   margin-top: 10rem;
   margin: 5rem;
 }
+
 .home-feedback-head,
 .home-feedback-para {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .home-feedback-button {
   margin: 2.5rem auto;
   background-color: black;
@@ -80,23 +98,27 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .home-feedback-form {
   margin: 0.5rem 2rem;
   font-size: 1.25rem;
 }
+
 .home-social-media-text {
   margin: 4rem;
   margin-top: 10rem;
   text-align: center;
 }
+
 .home-social-media-icons {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
   align-items: center;
 }
+
 .home-social-media-icons svg {
-  margin: 0 5rem;
+  margin: 0.5rem; /* Adjust margin for smaller screens */
 }
 
 /* Media query for screens with a maximum width of 768px */
