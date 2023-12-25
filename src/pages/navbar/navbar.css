@@ -1,5 +1,3 @@
-/* navbar.css */
-
 .navbar-container {
   font-family: 'Arial', sans-serif;
 }
@@ -20,9 +18,9 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
-  margin-right: 15px; /* Add some spacing between the toggle button and links */
-  display: none; /* Hide the toggle button by default */
-  transition: color 0.3s ease; /* Smooth color transition */
+  margin-right: 15px;
+  display: none;
+  transition: color 0.3s ease;
 }
 
 .menu-toggle:hover {
@@ -42,12 +40,12 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 20px;
-  transition: color 0.3s ease; /* Smooth color transition */
-  position: relative; /* Add relative positioning for dropdown */
+  transition: color 0.3s ease;
+  position: relative;
 }
 
 .nav-link:hover {
-  color: #ffc107; /* Highlight color on hover */
+  color: #ffc107;
 }
 
 .navbar-image {
@@ -56,18 +54,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 20px; /* Add some spacing from the right */
+  right: 20px;
 }
 
 .navbar-image img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 10px; /* Add some spacing between the image and text */
+  margin-right: 10px;
 }
 
 .navbar-rule {
-  background-color: #000000; /* Highlight color for the rule */
+  background-color: #000000;
   height: 1px;
   margin: 10px 0 20px 0;
 }
@@ -76,34 +74,16 @@
   color: #000000;
 }
 
-/* Dropdown styles */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #292b2c; /* Dropdown background color */
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nav-link:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show the toggle button for smaller screens */
+    display: block;
   }
 
   .navbar-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust top spacing for better visibility */
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: #292b2c;
@@ -126,13 +106,6 @@
 
   .nav-link {
     margin: 10px 0;
-  }
-
-  .navbar-image {
-    position: relative;
-    top: auto;
-    transform: none;
-    right: 0;
   }
 }
 @media (max-width: 576px) {
