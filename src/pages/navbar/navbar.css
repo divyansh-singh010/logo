@@ -53,6 +53,12 @@ nav .menu span {
     border-radius: 0.2rem;
 }
 
+.navbar-rule {
+  background-color: black;
+  height: 1px;
+  margin: 0.5rem 2rem 2rem 2rem;
+}
+
 
 @media (max-width: 480px) {
     nav .menu {
