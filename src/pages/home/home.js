@@ -1,5 +1,14 @@
 import React from "react";
 import "./home.css";
+import { useNavigate } from 'react-router-dom';
+
+const FeedbackButton = () => {
+  const navigate = useNavigate();
+
+const handleClick = () => {
+    // Redirect to the /feedback route
+    navigate('/feedback');
+  };
 
 const Home = () => {
   return (
@@ -152,7 +161,7 @@ const Home = () => {
           eleifend. Nulla ultrices nulla at ex pellentesque, a finibus ante
           porttitor. Nulla facilisi. Curabitur non urna ut risus dapibus viverra{" "}
         </p>
-        <button className="home-feedback-button">
+        <button className="home-feedback-button" onClick={handleClick}>
           <div className="home-feedback-form">Fill Form</div>
         </button>
       </div>
