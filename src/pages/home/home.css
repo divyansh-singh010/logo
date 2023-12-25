@@ -98,3 +98,37 @@ body {
 .home-social-media-icons svg {
   margin: 0 5rem;
 }
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .home-image-text-head {
+    font-size: 8rem; /* Adjust font size for smaller screens */
+  }
+
+  .home-grid-text,
+  .home-grid-image {
+    width: 100%; /* Full width for one column on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .home-image-text-head {
+    font-size: 6rem; /* Adjust font size for even smaller screens */
+  }
+
+  .home-grid-text,
+  .home-grid-image {
+    margin: 0; /* Remove margin for smaller screens */
+  }
+
+  .home-grid-text,
+  .home-grid-image {
+    width: 100%; /* Full width for one column on smaller screens */
+  }
+
+  .home-social-media-icons svg {
+    margin: 0.5rem; /* Adjust margin for smaller screens */
+  }
+}
