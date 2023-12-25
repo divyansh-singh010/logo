@@ -3,7 +3,9 @@ import "./feedback.css";
 
 const Feedback = () => {
   return (
-
+    <div>
+      {/* Feedback component content */}
+    </div>
   );
 };
 
