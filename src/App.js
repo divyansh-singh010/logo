@@ -12,11 +12,11 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/feedback" element={<Feedback />} />
-      </Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/feedback" element={<Feedback />} />
+    </Routes>
       {/* Footer starts */}
       <div className="footer">
         <ul className="footer-list">
